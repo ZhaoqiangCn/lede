@@ -88,7 +88,7 @@ CMAKE_OPTIONS = -DTLS_SUPPORT=on
 
 define Package/uhttpd/install
 	$(INSTALL_DIR) $(1)/etc/init.d
-	$(INSTALL_BIN) ./files/uhttpd.init $(1)/etc/init.d/uhttpd
+	#$(INSTALL_BIN) ./files/uhttpd.init $(1)/etc/init.d/uhttpd
 	$(INSTALL_DIR) $(1)/etc/config
 	$(INSTALL_CONF) ./files/uhttpd.config $(1)/etc/config/uhttpd
 	$(VERSION_SED_SCRIPT) $(1)/etc/config/uhttpd
